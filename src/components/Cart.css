@@ -1,0 +1,115 @@
+/* Cart.css */
+
+.cart-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 50;
+  }
+  
+  .cart-container.active {
+    transform: translateX(0);
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d2d2d;
+  }
+  
+  .close-icon {
+    border: 2px solid #6b6b6b;
+    color: #6b6b6b;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .close-icon:hover {
+    color: #e53e3e;
+    border-color: #e53e3e;
+  }
+  
+  .empty-cart-message {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d2d2d;
+  }
+  
+  .cart-footer {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .cart-summary {
+    font-weight: 600;
+    color: #2d2d2d;
+  }
+  
+  .divider {
+    width: 90%;
+    margin: 16px auto;
+  }
+  
+  .checkout-btn {
+    background-color: #48bb78;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #38a169;
+  }
+  
+  .cart-icon {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cart-icon.animate-bounce {
+    animation: bounce 0.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

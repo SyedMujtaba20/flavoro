@@ -1,0 +1,25 @@
+/* Success.css */
+
+/* Container for the success page */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Success heading */
+  .success-heading {
+    font-size: 2rem; /* Equivalent to text-3xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+    text-align: center;
+  }
+  
+  /* Success message */
+  .success-message {
+    font-size: 1rem;
+    text-align: center;
+  }
+  

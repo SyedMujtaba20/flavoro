@@ -1,0 +1,42 @@
+/* CategoryMenu.css */
+
+.category-menu {
+    margin-left: 1.5rem;
+  }
+  
+  .category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .category-buttons-container {
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .category-buttons-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-button {
+    padding: 0.5rem 1rem;
+    background-color: #e5e7eb; /* Equivalent to bg-gray-200 */
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #38a169; /* Equivalent to hover:bg-green-500 */
+    color: white;
+  }
+  
+  .category-button.active {
+    background-color: #38a169; /* Equivalent to bg-green-500 */
+    color: white;
+  }
+  

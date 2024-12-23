@@ -1,0 +1,68 @@
+/* ItemCard.css */
+
+.item-card {
+    display: flex;
+    gap: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+  }
+  
+  .item-card-delete {
+    position: absolute;
+    right: 1.75rem;
+    color: #4b5563; /* Equivalent to text-gray-600 */
+    cursor: pointer;
+  }
+  
+  .item-card-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .item-card-info {
+    line-height: 1.25rem;
+  }
+  
+  .item-card-name {
+    font-weight: bold;
+    color: #2d3748; /* Equivalent to text-gray-800 */
+  }
+  
+  .item-card-price-quantity {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item-card-price {
+    color: #38a169; /* Equivalent to text-green-500 */
+    font-weight: bold;
+  }
+  
+  .item-card-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    right: 1.75rem;
+  }
+  
+  .item-card-quantity-btn {
+    border: 2px solid #4b5563; /* Equivalent to border-gray-600 */
+    color: #4b5563; /* Equivalent to text-gray-600 */
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .item-card-quantity-btn:hover {
+    background-color: #38a169; /* Equivalent to hover:bg-green-500 */
+    color: white;
+    border-color: transparent;
+  }
+  
